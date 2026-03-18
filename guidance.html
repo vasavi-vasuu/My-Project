@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Guidance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>JobFinder</h2>                      
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="admin.html">Post Job</a>
+    <a href="guidance.html">Job Guidance</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+<div class="container">
+  <h1 class="page-title">Job Guidance & Resources</h1>
+  
+  <section class="about-section">
+    <h2>How to Build a Strong Resume</h2>
+    <p>
+      Your resume is your first impression with potential employers. Here are key tips to make it stand out:
+    </p>
+    <ul>
+      <li>Use clear, professional formatting with consistent fonts and spacing</li>
+      <li>Highlight your achievements and quantifiable results, not just responsibilities</li>
+      <li>Tailor your resume for each job application to match keywords from the job description</li>
+      <li>Keep it to one page for freshers, maximum two pages for experienced professionals</li>
+      <li>Use action verbs like "developed," "implemented," and "managed" to describe your accomplishments</li>
+      <li>Include relevant certifications, projects, and technical skills prominently</li>
+      <li>Proofread thoroughly - typos and grammatical errors can cost you the job</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>Interview Preparation Tips</h2>
+    <p>
+      Preparing well for an interview can significantly boost your confidence and chances of success:
+    </p>
+    <ul>
+      <li>Research the company thoroughly - understand their mission, values, and recent achievements</li>
+      <li>Practice answering common questions like "Tell me about yourself" and "Why do you want this job?"</li>
+      <li>Use the STAR method (Situation, Task, Action, Result) to answer behavioral questions</li>
+      <li>Prepare specific examples from your academic projects or internships</li>
+      <li>Dress professionally and arrive 10-15 minutes early (or login early for virtual interviews)</li>
+      <li>Maintain good eye contact, positive body language, and speak clearly</li>
+      <li>Ask thoughtful questions about the role and company to show genuine interest</li>
+      <li>Send a thank-you email within 24 hours of your interview</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>Top Skills for IT Students</h2>
+    <p>
+      The tech industry is constantly evolving. These are the most sought-after skills right now:
+    </p>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, Java, JavaScript, C++</li>
+      <li><strong>Web Development:</strong> HTML, CSS, React, Node.js, and Full-Stack frameworks</li>
+      <li><strong>Data Science:</strong> Machine Learning, Data Analysis, SQL, R</li>
+      <li><strong>Cloud Computing:</strong> AWS, Azure, Google Cloud Platform</li>
+      <li><strong>DevOps & Tools:</strong> Docker, Kubernetes, Git, CI/CD pipelines</li>
+      <li><strong>Soft Skills:</strong> Communication, teamwork, problem-solving, and time management</li>
+      <li><strong>Database Management:</strong> SQL, MongoDB, Firebase</li>
+      <li><strong>Cybersecurity Basics:</strong> Understanding security protocols and best practices</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>Career Roadmap for Freshers</h2>
+    <p>
+      Planning your career path early can help you make better decisions about learning and job choices:
+    </p>
+    <ul>
+      <li><strong>Phase 1 (Months 1-3):</strong> Focus on core fundamentals and build a portfolio through projects</li>
+      <li><strong>Phase 2 (Months 3-6):</strong> Pursue internships to gain real-world experience</li>
+      <li><strong>Phase 3 (Months 6-9):</strong> Strengthen your technical skills and build a professional network</li>
+      <li><strong>Phase 4 (Months 9-12):</strong> Apply for entry-level positions and start your first job</li>
+      <li><strong>First Year:</strong> Learn company processes, contribute meaningfully, and seek mentorship</li>
+      <li><strong>Years 2-3:</strong> Take on more responsibilities and consider specialization</li>
+      <li><strong>Long-term:</strong> Plan for career growth, leadership roles, or specialized expertise</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>LinkedIn Profile Optimization</h2>
+    <p>
+      A well-optimized LinkedIn profile can open many doors for you in your job search:
+    </p>
+    <ul>
+      <li>Use a professional profile photo with good lighting and clean background</li>
+      <li>Write a compelling headline that goes beyond just your job title</li>
+      <li>Craft a detailed about section that showcases your unique value proposition</li>
+      <li>Get endorsements for your key skills and request recommendations</li>
+      <li>Regularly share content, insights, or article links relevant to your industry</li>
+      <li>Join industry-specific groups and engage in meaningful discussions</li>
+      <li>Keep your profile updated with recent projects, certifications, and achievements</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>Common Interview Questions & How to Answer Them</h2>
+    <p>
+      Here are some frequently asked interview questions with guidance on how to approach them:
+    </p>
+    <ul>
+      <li><strong>"Tell me about yourself":</strong> Provide a 2-3 minute overview of your background, skills, and career goals</li>
+      <li><strong>"Why do you want this job?":</strong> Show genuine interest by connecting your skills to company needs</li>
+      <li><strong>"What are your strengths?":</strong> Pick 2-3 relevant strengths backed with concrete examples</li>
+      <li><strong>"What are your weaknesses?":</strong> Choose a real weakness and explain how you're working to improve it</li>
+      <li><strong>"Describe a challenging project":</strong> Use STAR method to highlight problem-solving abilities</li>
+      <li><strong>"Where do you see yourself in 5 years?":</strong> Show ambition while demonstrating commitment to growth</li>
+    </ul>
+  </section>
+
+</div>
+
+<div class="footer">© 2026 JobFinder | Developed By Vasavi & Team</div>
+
+<script>
+document.getElementById("hamburgerBtn").addEventListener("click", function() {
+  var nav = this.closest(".navbar").querySelector("nav");
+  nav.classList.toggle("nav-open");
+  this.classList.toggle("active");
+});
+</script>
+</body>
+</html>
+

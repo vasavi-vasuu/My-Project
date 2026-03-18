@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<header class="navbar">
+  <h2>JobFinder</h2>                      
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="admin.html">Post Job</a>
+    <a href="guidance.html">Job Guidance</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+<div class="container">
+  <h1>All Jobs</h1>
+  <div id="jobs" class="jobs"></div>
+</div>
+
+<script type="module" src="./js/fetchJobs.js"></script>
+<script>
+document.getElementById("hamburgerBtn").addEventListener("click", function() {
+  var nav = this.closest(".navbar").querySelector("nav");
+  nav.classList.toggle("nav-open");
+  this.classList.toggle("active");
+});
+</script>
+</body>
+
+</html>

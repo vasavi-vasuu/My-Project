@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Job</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<header class="navbar">
+  <h2>JobFinder</h2>                      
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="guidance.html">Job Guidance</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+<div class="container">
+  <div class="admin-section">
+    <h1 class="admin-title">Post a New Job Opportunity</h1>
+    <p class="admin-subtitle">Help students and freshers find their dream jobs</p>
+    
+    <form class="job-form" id="jobForm">
+      <div class="form-group">
+        <label for="title">Job Title <span class="required">*</span></label>
+        <input type="text" id="title" placeholder="e.g., Software Developer, Data Analyst" required>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Company Name <span class="required">*</span></label>
+        <input type="text" id="company" placeholder="e.g., Tech Solutions Inc." required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="location">Location <span class="required">*</span></label>
+          <input type="text" id="location" placeholder="e.g., Bangalore, Remote" required>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Job Type <span class="required">*</span></label>
+          <select id="type" required>
+            <option value="">Select Job Type</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Internship">Internship</option>
+            <option value="Contract">Contract</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="salary">Salary Range <span class="required">*</span></label>
+        <input type="text" id="salary" placeholder="e.g., 4-6 LPA, $50,000-$70,000" required>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Job Description <span class="required">*</span></label>
+        <textarea id="description" placeholder="Describe the job role, responsibilities, and requirements..." rows="8" required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" id="addBtn" class="btn-submit">Post Job</button>
+        <button type="reset" class="btn-reset">Clear Form</button>
+      </div>
+    </form>
+
+    <div class="info-box">
+      <h3>💡 Tips for a Great Job Posting</h3>
+      <ul>
+        <li>Be clear and specific about the job responsibilities</li>
+        <li>List required skills and qualifications</li>
+        <li>Include information about company benefits</li>
+        <li>Specify the application deadline if any</li>
+        <li>Make sure contact information is accurate</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="./js/addJob.js"></script>
+<script>
+document.getElementById("hamburgerBtn").addEventListener("click", function() {
+  var nav = this.closest(".navbar").querySelector("nav");
+  nav.classList.toggle("nav-open");
+  this.classList.toggle("active");
+});
+</script>
+</body>
+</html>

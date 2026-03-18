@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>JobFinder</h2>                      
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="admin.html">Post Job</a>
+    <a href="guidance.html">Job Guidance</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+<div class="container">
+  <h1 class="page-title">Contact Us</h1>
+  <form>
+    <input placeholder="Your Name">
+    <input placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</div>
+
+<div class="footer">© 2026 JobFinder | Developed By Vasavi & Team</div>
+
+<script>
+document.getElementById("hamburgerBtn").addEventListener("click", function() {
+  var nav = this.closest(".navbar").querySelector("nav");
+  nav.classList.toggle("nav-open");
+  this.classList.toggle("active");
+});
+</script>
+</body>
+</html>
+

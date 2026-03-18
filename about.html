@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>JobFinder</h2>                      
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="admin.html">Post Job</a>
+    <a href="guidance.html">Job Guidance</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+<div class="container">
+  <h1 class="page-title">About JobFinder</h1>
+  
+  <section class="about-section">
+    <h2>Our Mission</h2>
+    <p>
+      JobFinder is a job display platform designed to help students and freshers
+      find verified job opportunities easily. Our mission is to bridge the gap between 
+      talented individuals and quality job opportunities by providing a transparent, 
+      user-friendly platform for job discovery and career guidance.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>Why Choose JobFinder?</h2>
+    <ul>
+      <li><strong>Verified Opportunities:</strong> All job listings are verified and authentic, ensuring you don't waste time on fraudulent postings.</li>
+      <li><strong>Easy Navigation:</strong> Simple and intuitive interface designed specifically for students and freshers.</li>
+      <li><strong>Comprehensive Guidance:</strong> Access to job guidance resources to help you prepare for interviews and applications.</li>
+      <li><strong>Real-time Updates:</strong> Stay updated with the latest job opportunities in your field.</li>
+      <li><strong>Free Platform:</strong> No hidden charges. All services are completely free for job seekers.</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>Our Features</h2>
+    <ul>
+      <li>Browse job listings across multiple industries and sectors</li>
+      <li>Detailed job descriptions including salary, location, and requirements</li>
+      <li>Expert job guidance and tips for career success</li>
+      <li>Company profiles and reviews</li>
+      <li>Application tracking and management tools</li>
+      <li>Interview preparation resources</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>Who We Serve</h2>
+    <p>
+      JobFinder caters to students, recent graduates, and early-career professionals 
+      looking to jumpstart their careers. Whether you're seeking your first job, looking 
+      for an internship, or exploring new opportunities, JobFinder is your trusted partner 
+      in your job search journey.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>Our Team</h2>
+    <p>
+      Developed with passion and dedication by Vasavi & Team, JobFinder combines technical 
+      expertise with deep understanding of job market needs. We're committed to continuously 
+      improving the platform to serve you better.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>Get In Touch</h2>
+    <p>
+      Have questions or suggestions? We'd love to hear from you! Visit our 
+      <a href="contact.html">Contact page</a> to reach out to our team.
+    </p>
+  </section>
+</div>
+
+<div class="footer">© 2026 JobFinder | Developed By Vasavi & Team</div>
+
+<script>
+document.getElementById("hamburgerBtn").addEventListener("click", function() {
+  var nav = this.closest(".navbar").querySelector("nav");
+  nav.classList.toggle("nav-open");
+  this.classList.toggle("active");
+});
+</script>
+</body>
+</html>
+
